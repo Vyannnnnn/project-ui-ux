@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         custom: "url('../assets/bg-custom.png')",
+        primary: "url('../assets/bg.png')",
       },
     },
   },
