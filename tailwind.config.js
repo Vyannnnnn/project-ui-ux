@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         secondary: "#03F701",
+        yellow: "#FDE507",
       },
       backgroundImage: {
         custom: "url('../assets/bg-custom.png')",
