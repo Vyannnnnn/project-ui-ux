@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Produk</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="bg-primary bg-no-repeat bg-center bg-cover relative">
+    <!-- start nav -->
+    <nav class="bg-red-400 lg:bg-white xl:bg-blue-400 fixed rounded-2xl w-[90%] mx-[58.3px] z-20 top-0 start-0 border-gray-200 mt-6">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+        <div class="flex space-x-3 md:space-x-0 rtl:space-x-revers">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <li>
+              <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent md:text-black md:p-0" aria-current="page">Men's</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 border-gray-700">Women's</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-4xl font-extrabold whitespace-nowrap text-black">SOES<span class="text-secondary">ZY</span></span>
+        </a>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <li>
+              <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page"><img class="w-5" src="../assets/cart.png" alt="" /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                ><img class="w-5" src="../assets/chat.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                ><img class="w-5" src="../assets/search.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                ><img class="w-5" src="../assets/profile.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+  
+    <!-- start main -->
+    <div class="flex justify-center gap-5 mt-36 mb-20">
+      <div class="flex-col">
+        <div class="w-[600px] mb-5  bg-[#FAFAFA] rounded-xl p-4">
+          <h1 class="font-bold text-2xl">Contact Details</h1>
+          <p class="mb-3">We will use these details to keep you inform about your delivery.</p>
+          <form class="w-1/2 mb-5">
+            <div class="mb-5">
+              <input type="email" id="email" class="bg-[#FAFAFA] border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Email" required />
+            </div>
+          </form>
+          <h1 class="font-bold text-2xl mb-3">Shipping Address</h1>
+          <form class="w-full mb-4">
+            <div class="mb-4 flex gap-2">
+              <input type="text" id="Fname" class="bg-[#FAFAFA] border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="First Name*" required />
+              <input type="text" id="Lname" class="bg-[#FAFAFA] border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Last Name*" required />
+            </div>
+            <div class="w-full mb-4">
+            <input type="text" id="address" class="bg-[#FAFAFA] w-full border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="Find Delivery Address*" required />
+            <p  class="mt-1 text-sm text-gray-500 ">Start typing your street address or zip code for suggestion</p>  
+        </div>
+            <div class="w-full mb-4">
+            <input type="number" id="phone" class="bg-[#FAFAFA] w-full border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="Phone Number*" required />
+            <p  class="mt-1 text-sm text-gray-500 ">E.g. (123) 456-7890</p>  
+        </div>
+        </form>
+        </div>
+        <div class="w-[600px] h-[450px] bg-[#FAFAFA] rounded-xl p-1"></div>
+      </div>
+
+      <div class="flex-col items-center">
+        <div class="bg-[#FAFAFA] mb-5 w-[400px]  px-4 py-3 rounded-xl">
+            <h1 class="font-bold text-2xl mb-4">Order Summary</h1>
+            <div class="flex justify-between font-semibold">
+                <div class="flex-col flex gap-1 ">
+                    <p>1 Item</p>
+                    <p>Delivery</p>
+                    <p>Sales Tax</p>
+                    <p class="font-bold text-lg">Total</p>
+                </div>
+                <div class="flex-col flex gap-1">
+                    <p>IDR1.999.980</p>
+                    <p>IDR9.000</p>
+                    <p>-</p>
+                    <p class="font-bold text-lg">IDR1.999.980</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#FAFAFA] w-[400px] px-4 py-3 rounded-xl">
+            <h1 class="font-bold text-2xl mb-4">Order Details</h1>
+            <div class="flex gap-5 items-start">
+                <div class="bg-[#ECEDEF] rounded-xl px-2">
+                    <img src="../assets/shoes.png" alt="shoes" class="w-32 h-36">
+                </div>
+                <div class="">
+                    <h5>DROPSET TRAINER SHOES</h5>
+                    <p class="mb-3">Men’s Road Running Shoes Enamel Blue/ University White</p>
+                    <div class="flex gap-10 mb-3">
+                    <p>Size 10</p>
+                    <p>Quantity 1</p>
+                </div>
+                <p class="font-bold text-lg">IDR1.999.980</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer class="mb-10">
+      <div class="text-center font-extrabold whitespace-nowrap mb-20">
+        <p class="text-7xl text-white mb-4">SOES<span class="text-secondary">ZY</span></p>
+        <p class="text-xl uppercase text-white">cool doesn't have to be expensive</p>
+      </div>
+      <div class="flex justify-evenly">
+        <div class="w-72">
+          <h4 class="text-yellow font-bold text-xl mb-3">About Us</h4>
+          <p class="text-white text-sm">We are a provider of quality used shoes that makes customer satisfaction and comfort a top priority.</p>
+        </div>
+        <div class="">
+          <h4 class="text-yellow font-bold text-xl mb-3">Categories</h4>
+          <ul class="text-white">
+            <li><a href="#">Runners</a></li>
+            <li><a href="#">Sneakers</a></li>
+            <li><a href="#">Outdoors</a></li>
+            <li><a href="#">School</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <h4 class="text-yellow font-bold text-xl mb-3">Company</h4>
+          <ul class="text-white">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <h4 class="text-yellow font-bold text-xl mb-3">Follow us</h4>
+          <div class="flex justify-around gap-1">
+            <a href="#"><img class="w-5" src="../assets/fb.png" alt="fb" /></a>
+            <a href="#"><img class="w-5" src="../assets/ig.png" alt="ig" /></a>
+            <a href="#"><img class="w-5" src="../assets/tt.png" alt="tt" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>
