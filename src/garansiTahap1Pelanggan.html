@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cek Keaslian</title>
     <link rel="stylesheet" href="../dist/output.css" />
+    <style>
+      .custom-border::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 87%;
+        transform: translateX(-50%);
+        width: 23%;
+        border-bottom: 2px solid #03f701;
+      }
+    </style>
   </head>
   <body class="bg-primary bg-no-repeat bg-center bg-cover relative">
     <!-- start nav -->
-    <nav class="bg-red-400 lg:bg-black xl:bg-blue-400 fixed rounded-2xl w-[90%] mx-[58.3px] z-20 top-0 start-0 border-gray-200 mt-6 py-5">
+    <nav class="bg-red-400 lg:bg-black xl:bg-blue-400 fixed rounded-2xl w-[90%] mx-[4rem] z-20 top-0 start-0 border-gray-200 mt-6 py-5">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <div class="flex space-x-3 md:space-x-0 rtl:space-x-revers">
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
@@ -43,11 +54,68 @@
                 ><img class="w-5" src="../assets/greenCircle.png"
               /></a>
             </li>
-            
           </ul>
         </div>
       </div>
     </nav>
     <!-- end nav -->
+
+    <!-- main -->
+    <div class="flex justify-center gap-x-5 mt-44 w-[90%] mx-[4rem]">
+      <div class="bg-[#0A0A0A] w-60 h-80 rounded-xl">
+        <div class="flex justify-center px-2 py-7 gap-x-5">
+          <img src="../assets/profileCustomer.png" alt="" />
+          <div class="">
+            <h3 class="text-white font-semibold">User102388496</h3>
+            <p class="underline text-white">User Profile</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-y-7">
+        <div class="bg-black p-4 rounded-xl relative custom-border">
+          <ul class="text-white flex gap-x-28 text-sm">
+            <li>
+              <div class="flex gap-x-3 items-center">
+                <p>Menunggu Pembayaran</p>
+                <img class="w-5 h-5" src="../assets/totalPengiriman.png" alt="total" />
+              </div>
+            </li>
+            <li>
+              <div class="flex gap-x-3 items-center">
+                <p>Dikemas</p>
+                <img class="w-5 h-5" src="../assets/totalPengiriman.png" alt="total" />
+              </div>
+            </li>
+            <li>
+              <div class="flex gap-x-3 items-center">
+                <p>Dikirim</p>
+                <img class="w-5 h-5" src="../assets/totalPengiriman.png" alt="total" />
+              </div>
+            </li>
+            <li class="pr-14">
+              <div class="flex gap-x-3 items-center">
+                <p>Selesai</p>
+                <img class="w-5 h-5" src="../assets/totalPengiriman.png" alt="total" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-[#0A0A0A] rounded-xl flex justify-between">
+          <div class="text-white">
+            <p class="mb-3">15 Mei 2024</p>
+            <div class="flex items-center gap-x-3">
+              <img class="bg-[#ECEEF0] rounded-lg w-28" src="../assets/shoes-small.png" alt="" />
+              <div class="">
+                <h3 class="font-semibold">Adidas 4DFWD x Perley GX6604</h3>
+                <p>Size : 42</p>
+                <p>1 x Rp2.225.000</p>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- end main -->
   </body>
 </html>
