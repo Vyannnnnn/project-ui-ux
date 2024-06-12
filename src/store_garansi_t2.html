@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garansi Tahap 2</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+</head>
+<body class="bg-primary bg-repeat bg-center bg-cover relative"> 
+    
+    <nav class="bg-navStore fixed w-full top-0 z-20 start-0 border-gray-200">
+        <div class="max-w-screen-xl flex items-center justify-between mx-auto p-5">
+            
+            <!-- Wrapper div for logo and menu -->
+            <div class="flex items-center space-x-14">
+                
+                <!-- Logo -->
+                <a href="https://flowbite.com/" class="flex items-center space-x-3">
+                    <span class="self-center text-2xl font-extrabold whitespace-nowrap text-white">SOES<span class="text-secondary">ZY</span></span>
+                </a>
+                
+                <!-- Menu -->
+                <ul class="flex space-x-14 font-bold">
+                    <li>
+                      <a href="#" class="text-white">Produk</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-white">Transaksi</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-white">Keuangan</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Profil Foto di Sebelah Kanan -->
+            <div class="flex items-center">
+                <img src="../assets/profile_image.png" alt="Profil" class="w-12 h-12 rounded-full">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Judul Halaman -->
+    <div class="mt-24 p-5 text-center">
+        <h1 class="text-3xl font-extrabold text-white">Transaksi</h1>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="max-w-screen-xl mx-auto p-5 flex space-x-8">
+        <!-- Card 1 -->
+        <div class="bg-bgCard shadow-md rounded-lg p-5 flex flex-col w-64 h-96">
+            <div class="flex items-center space-x-4">
+                <img src="../assets/profile_image.png" alt="User" class="w-12 h-12 rounded-full">
+                <div>
+                    <h2 class="text-xl font-semibold text-white">Kita Soes & Care</h2>
+                    <a href="#" class="text-white underline">Ubah Profil Store</a>
+                </div>
+            </div>
+            <button class="mt-4 bg-secondary text-black px-4 py-4 rounded-xl flex items-center justify-center space-x-2 whitespace-nowrap">
+                <span class="font-semibold">Laporan Transaksi</span>
+                <img src="../assets/arrow left_.png" alt="Unduh" class="w-3 h-4">
+            </button>
+        </div>
+        
+        <!-- Bagian Kanan: Navbar Kedua dan List Transaksi -->
+        <div class="flex flex-col space-y-8 w-920">
+            <!-- Navbar Kedua -->
+            <nav class="bg-black shadow-md rounded-lg p-5 flex justify-between items-center relative">
+                <div class="flex items-center space-x-2 nav-item">
+                    <a href="#" class="text-white font-semibold menu-item">Menunggu Pembayaran</a>
+                    <button class="bg-[#03F701] text-[#000000] rounded-md w-8 h-6 flex items-center justify-center">
+                        2
+                    </button>
+                </div>
+                <div class="flex items-center space-x-2 nav-item">
+                    <a href="#" class="text-white font-semibold menu-item">Dikemas</a>
+                    <button class="bg-[#03F701] text-[#000000] rounded-md w-8 h-6 flex items-center justify-center">
+                        2
+                    </button>
+                </div>
+                <div class="flex items-center space-x-2 nav-item">
+                    <a href="#" class="text-white font-semibold menu-item">Dikirim</a>
+                    <button class="bg-[#03F701] text-[#000000] rounded-md w-8 h-6 flex items-center justify-center">
+                        2
+                    </button>
+                </div>
+                <div class="flex items-center space-x-2 nav-item">
+                    <a href="#" class="text-white font-semibold menu-item">Selesai</a>
+                    <button class="bg-[#03F701] text-[#000000] rounded-md w-8 h-6 flex items-center justify-center">
+                        2
+                    </button>
+                </div>
+                <!-- Garis Aktif -->
+                <div class="absolute bottom-0 right-0 w-40 h-0.5 bg-[#03F701]"></div>
+            </nav>
+
+            <!-- List Transaksi -->
+            <!-- Card Transaksi 1 -->
+            <div class="space-y-4">
+                <div class="bg-bgCard shadow-md rounded-lg p-7 flex justify-between relative">
+                    <span class="absolute top-5 left-9 text-white mb-2 text-sm">15 Mei 2024</span>
+                    <div class="flex mt-5">
+                        <img src="../assets/sepatu-1.png" alt="Produk" class="w-24 h-24 rounded-xl">
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-white mt-4">Adidas 4DFWD x Perley GX6604</h3>
+                            <p class="text-white font-light mt-1 text-sm">Size: 42</p>
+                            <p class="text-white font-light mt-1 text-sm">1 x Rp2.225.000</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between">
+                        <!-- Bagian Pertama -->
+                        <div class="absolute top-3 right-7 space-x-5">
+                            <span class="text-[#DBDBDB] top-1">20240515/001</span>
+                            <button class="bg-[#FDE507] text-black px-4 py-0.5 rounded-lg">Selesai</button>
+                        </div>
+                        <!-- Bagian Kedua -->
+                        <div class="text-right mb-4 mt-10">
+                            <span class="text-white">Total Belanja</span>
+                            <p class="text-white font-bold">Rp2.225.000</p>
+                        </div>
+                        <!-- Bagian Ketiga -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <a href="#" class="text-white underline font-bold">Lihat Detail Transaksi</a>
+                                <button class="bg-[#03F701] text-black px-10 py-1 rounded font-bold">Refund</button>
+                                <img src="../assets/icon-chat.png" alt="Icon" class="w-10 h-10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card Transaksi 2 -->
+                <div class="space-y-4">
+                    <div class="bg-bgCard shadow-md rounded-lg p-7 flex justify-between relative">
+                        <span class="absolute top-5 left-9 text-white mb-2 text-sm">15 Mei 2024</span>
+                        <div class="flex mt-5">
+                            <img src="../assets/sepatu-3.png" alt="Produk" class="w-24 h-24 rounded-xl">
+                            <div class="ml-4">
+                                <h3 class="text-lg font-bold text-white mt-4">Adidas 911 Special Edition x Wetan Kali</h3>
+                                <p class="text-white font-light mt-1 text-sm">Size: 45</p>
+                                <p class="text-white font-light mt-1 text-sm">2 x Rp10.000.000</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-between">
+                            <!-- Bagian Pertama -->
+                            <div class="absolute top-3 right-7 space-x-5">
+                                <span class="text-[#DBDBDB] top-1">20240515/001</span>
+                                <button class="bg-[#FDE507] text-black px-4 py-0.5 rounded-lg">Selesai</button>
+                            </div>
+                            <!-- Bagian Kedua -->
+                            <div class="text-right mb-4 mt-10">
+                                <span class="text-white">Total Belanja</span>
+                                <p class="text-white font-bold">Rp20.000.000</p>
+                            </div>
+                            <!-- Bagian Ketiga -->
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="text-white text-sm underline font-bold">Lihat Detail Transaksi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Card Transaksi 3 -->
+                <div class="space-y-4">
+                <div class="bg-bgCard shadow-md rounded-lg p-7 flex justify-between relative">
+                    <span class="absolute top-5 left-9 text-white mb-2 text-sm">15 Mei 2024</span>
+                    <div class="flex mt-5">
+                        <img src="../assets/sepatu-3.png" alt="Produk" class="w-24 h-24 rounded-xl">
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-white mt-4">Adidas 911 Special Edition x Wetan Kali</h3>
+                            <p class="text-white font-light mt-1 text-sm">Size: 45</p>
+                            <p class="text-white font-light mt-1 text-sm">2 x Rp10.000.000</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between">
+                        <!-- Bagian Pertama -->
+                        <div class="absolute top-3 right-7 space-x-5">
+                            <span class="text-[#DBDBDB] top-1">20240515/001</span>
+                            <button class="bg-[#FDE507] text-black px-4 py-0.5 rounded-lg">Selesai</button>
+                        </div>
+                        <!-- Bagian Kedua -->
+                        <div class="text-right mb-4 mt-10">
+                            <span class="text-white">Total Belanja</span>
+                            <p class="text-white font-bold">Rp20.000.000</p>
+                        </div>
+                        <!-- Bagian Ketiga -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center mt-4">
+                                <a href="#" class="text-white text-sm underline font-bold">Lihat Detail Transaksi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
