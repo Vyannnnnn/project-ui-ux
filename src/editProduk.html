@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Produk</title>
+  <link rel="stylesheet" href="../dist/output.css" />
+</head>
+<body class="bg-primary bg-no-repeat bg-center bg-cover relative">
+
+      <!-- start nav -->
+  <nav class="bg-black fixed w-full top-0 z-20 start-0 border-gray-200">
+    <div class="max-w-screen-xl flex items-center justify-between mx-auto p-5">
+      <!-- Wrapper div for logo and menu -->
+      <div class="flex items-center space-x-14">
+        <!-- Logo -->
+        <a href="https://flowbite.com/" class="flex items-center space-x-3">
+          <span class="self-center text-2xl font-extrabold whitespace-nowrap text-white">SOES<span class="text-secondary">ZY</span></span>
+        </a>
+        <!-- Menu -->
+        <ul class="flex space-x-14 font-bold">
+          <li>
+            <a href="#" class="text-white">Produk</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">Transaksi</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">Keuangan</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Profil Foto di Sebelah Kanan -->
+      <div class="flex items-center">
+        <img src="../assets/profile.png" alt="Profil" class="w-12 h-12 rounded-full">
+      </div>
+    </div>
+  </nav>
+  <!-- end nav -->
+
+  <!-- Main Content -->
+  <div class="container mx-auto mt-36 px-4">
+    <!-- Title -->
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-center ml-[43%] text-3xl font-bold text-white">EDIT PRODUK</h2>
+      <button class="border border-yellow text-yellow hover:bg-yellow font-bold py-2 px-4 rounded-lg">Hapus</button>
+    </div>
+    
+    <!-- Form -->
+    <form class=" grid grid-cols-2 gap-8">
+      <!-- Image Upload Section -->
+      <div class="flex flex-col items-center justify-center bg-gray-200 rounded-lg p-6">
+        <div class="w-48 h-48 bg-gray-300 flex items-center justify-center roun`ded-lg mb-4">
+          <img src="../assets/shoes-small3.png" alt="Product" class="object-cover w-full h-full rounded-lg">
+        </div>
+        <div class="flex space-x-4">
+          <button type="button" class="bg-gray-300 w-12 h-12 rounded-lg flex items-center justify-center">
+            <span class="text-2xl text-gray-600">+</span>
+          </button>
+          <button type="button" class="bg-gray-300 w-12 h-12 rounded-lg flex items-center justify-center">
+            <span class="text-2xl text-gray-600">+</span>
+          </button>
+          <button type="button" class="bg-gray-300 w-12 h-12 rounded-lg flex items-center justify-center">
+            <span class="text-2xl text-gray-600">+</span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Input Fields Section -->
+      <div class="grid grid-cols-2 gap-4">
+        <input type="text" value="Adidas 4DFWD X Parley GX6604" class="col-span-2 p-4 bg-gray-200 rounded-lg">
+        <input type="text" value="Rp2.225.000" class="p-4 bg-gray-200 rounded-lg">
+        <input type="text" value="Adidas" class="p-4 bg-gray-200 rounded-lg">
+        <input type="text" value="Pria" class="p-4 bg-gray-200 rounded-lg">
+        <input type="text" value="Lari" class="p-4 bg-gray-200 rounded-lg">
+        <input type="text" value="1" class="p-4 bg-gray-200 rounded-lg">
+        <input type="text" value="42" class="p-4 bg-gray-200 rounded-lg">
+        <textarea placeholder="Deskripsi" class="col-span-2 p-4 bg-gray-200 rounded-lg"></textarea>
+      </div>
+      
+      <!-- Submit Button -->
+      <div class="col-span-2 flex justify-center mt-4 gap-4">
+        <button class=" bg-secondary hover:bg-green-400 text-black font-bold py-2 px-4 rounded">Simpan</button>
+        <button type="button" class="border border-gray hover:bg-gray-900 text-white font-bold py-2 px-8 rounded-lg">Batal</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
