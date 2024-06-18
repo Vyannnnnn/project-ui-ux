@@ -17,6 +17,7 @@ module.exports = {
       backgroundImage: {
         custom: "url('../assets/bg-custom.png')",
         primary: "url('../assets/bg.png')",
+        customer: "url('../assets/bg-customer.png')",
         profil_img: "url('../assets/profile_image.png')",
         bgChatSepatu1: "url('../assets/chat-1.png')",
         bgChatSepatu2: "url('../assets/chat-2.png')",
@@ -73,6 +74,12 @@ module.exports = {
       },
       opacity: {
         '25': '0.25',
+        '15': '0.15',
+      },
+      fontFamily: {
+        rubik: ['Rubik', 'sans-serif'],
+        openSans: ['Open Sans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
@@ -81,6 +88,9 @@ module.exports = {
       const newUtilities = {
         '.border-b-green-custom': {
           borderBottomColor: '#03F701',
+        },
+        '.placeholder-right::placeholder': {
+          paddingLeft: '0.60rem',
         },
       };
 
