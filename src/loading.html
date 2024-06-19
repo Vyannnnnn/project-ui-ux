@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script>
+        function redirectAfterDelay() {
+            setTimeout(function() {
+                window.location.href = "orderComplete.html"; 
+            }, 3000); 
+        }
+        window.onload = redirectAfterDelay;
+    </script>
+</head>
+<body>
+    <div class="flex gap-4 p-4 flex-wrap justify-center mt-36">
+        <img class="w-20 h-20 animate-spin" src="https://www.svgrepo.com/show/70469/loading.svg" alt="Loading icon">
+    </div>
+</body>
+</html>
