@@ -1,358 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customer Chat Page</title>
     <link rel="stylesheet" href="/dist/output.css" />
 
     <!-- Font Rubik -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
     <!-- Font Open Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
     <!-- Font Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-</head>
-<body class="bg-[url('../assets/bg-repeat.png')]">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[url('../assets/bg-repeat.png')]">
     <!-- start nav -->
     <div class="flex justify-center my-8">
-        <nav
-         class="lg:bg-white rounded-2xl w-[90%]"
-         >
-         <div
-         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2"
-         >
-         <div class="flex space-x-3 md:space-x-0 rtl:space-x-revers">
-             <ul
-             class="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-             >
-             <li>
-                 <a
-                 href="#"
-                 class="block py-2 px-3 text-black rounded md:bg-transparent md:text-black md:p-0"
-                 aria-current="page"
-                 >Men's</a
-                 >
-             </li>
-             <li>
-                 <a
-                 href="#"
-                 class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 border-gray-700"
-                 >Women's</a
-                 >
-             </li>
-             </ul>
-         </div>
-         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-             <span
-             class="self-center text-4xl font-extrabold whitespace-nowrap text-black"
-             >SOES<span class="text-secondary">ZY</span></span
-             >
-         </a>
-         <div
-             class="items-center justify-between hidden w-full md:flex md:w-auto"
-             id="navbar-sticky"
-         >
-             <ul
-             class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-             >
-             <li>
-                 <a
-                 href="#"
-                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                 aria-current="page"
-                 ><img class="w-5" src="../assets/cart.png" alt=""
-                 /></a>
-             </li>
-             <li>
-                 <a
-                 href="#"
-                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                 ><img class="w-5" src="../assets/chat.png" alt=""
-                 /></a>
-             </li>
-             <li>
-                 <a
-                 href="#"
-                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                 ><img class="w-5" src="../assets/search.png" alt=""
-                 /></a>
-             </li>
-             <li>
-                 <a
-                 href="#"
-                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                 ><img class="w-5" src="../assets/profile.png" alt=""
-                 /></a>
-             </li>
-             </ul>
-         </div>
-         </div>
-        </nav>
-     </div>
+      <nav class="bg-white rounded-2xl w-[90%]">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+          <div class="flex space-x-3 md:space-x-0 rtl:space-x-revers">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <li>
+                <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent md:text-black md:p-0" aria-current="page">Men's</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 border-gray-700">Women's</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center text-4xl font-extrabold whitespace-nowrap text-black">SOES<span class="text-secondary">ZY</span></span>
+          </a>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <li>
+                <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page"><img class="w-5" src="../assets/cart.png" alt="" /></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  ><img class="w-5" src="../assets/chat.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  ><img class="w-5" src="../assets/search.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  ><img class="w-5" src="../assets/profile.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
     <!-- end nav -->
-    
+
     <!-- Fitur Chat -->
     <div class="flex flex-row w-4/5 mx-auto p-5 mb-20 mt-10">
+      <!-- Bagian Satu: List Kontak -->
+      <div class="basis-5/12 bg-bgCard shadow-md rounded-2xl p-5 w-1/3 gap-10 font-poppins">
+        <h2 class="text-2xl font-bold text-white mb-4">Chat</h2>
 
-        <!-- Bagian Satu: List Kontak -->
-        <div class="basis-5/12 bg-bgCard shadow-md rounded-2xl p-5 w-1/3 gap-10 font-poppins">
-
-            <h2 class="text-2xl font-bold text-white mb-4">Chat</h2>
-            
-            <div class="space-y-4">
-
-                <!-- First Kontak Toko -->
-                <div class="flex justify-between rounded-lg">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/profile-kontak-1.png" alt="User" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white">Kita Shoes & Care</h3>
-                            <p class="text-sm text-gray-400">Like new no printilan ...</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-400">20.01</span>
-                    </div>
-                </div>
-                <div class="w-89 ml-2 border-t border-white opacity-25"></div>
-
-                <!-- Kontak Cah ke-1 -->
-                <div class="flex justify-between items-center rounded-lg">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
-                            <p class="text-sm text-gray-400">Like new no printilan ...</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-400">Kemarin 00.00</span>
-                    </div>
-                </div>
-                <div class="w-89 ml-2 border-t border-white opacity-25"></div>
-
-                <!-- Kontak Cah ke-2 -->
-                <div class="flex justify-between items-center rounded-lg">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
-                            <p class="text-sm text-gray-400">Like new no printilan ...</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-400">Kemarin 00.00</span>
-                    </div>
-                </div>
-                <div class="w-89 ml-2 border-t border-white opacity-25"></div>
-
-                <!-- Kontak Cah ke-3 -->
-                <div class="flex justify-between items-center rounded-lg">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
-                            <p class="text-sm text-gray-400">Like new no printilan ...</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-400">Kemarin 00.00</span>
-                    </div>
-                </div>
-                <div class="w-89 ml-2 border-t border-white opacity-25"></div>
-
-                <!-- Kontak Cah ke-4 -->
-                <div class="flex justify-between items-center rounded-lg">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
-                            <p class="text-sm text-gray-400">Like new no printilan ...</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-400">Kemarin 00.00</span>
-                    </div>
-                </div>
-                <div class="w-89 ml-2 border-t border-white opacity-25"></div>
-
-                <!-- Kontak Cah ke-5 -->
-                <div class="flex justify-between items-center rounded-lg">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
-                            <p class="text-sm text-gray-400">Like new no printilan ...</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-400">Kemarin 00.00</span>
-                    </div>
-                </div>
-                <div class="w-89 ml-2 border-t border-white opacity-25"></div>
-
-                <!-- Kontak Cah ke-6 -->
-                <div class="flex justify-between items-center rounded-lg">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
-                            <p class="text-sm text-gray-400">Like new no printilan ...</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-400">Kemarin 00.00</span>
-                    </div>
-                </div>
-                <div class="w-89 ml-2 border-t border-white opacity-25"></div>
-
-                <!-- Kontak Cah ke-7 -->
-                <div class="flex justify-between items-center rounded-lg">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
-                            <p class="text-sm text-gray-400">Like new no printilan ...</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-400">Kemarin 00.00</span>
-                    </div>
-                </div>
-                <div class="w-89 ml-2 border-t border-white opacity-25"></div>
-
-                <!-- Kontak Cah ke-8-->
-                <div class="flex justify-between items-center rounded-lg">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
-                            <p class="text-sm text-gray-400">Like new no printilan ...</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-400">Kemarin 00.00</span>
-                    </div>
-                </div>
-                <div class="w-89 ml-2 border-t border-white opacity-25"></div>
-
+        <div class="space-y-4">
+          <!-- First Kontak Toko -->
+          <div class="flex justify-between rounded-lg">
+            <div class="flex items-center space-x-4">
+              <img src="../assets/profile-kontak-1.png" alt="User" class="w-16 h-16 rounded-full" />
+              <div>
+                <h3 class="text-lg font-semibold text-white">Kita Shoes & Care</h3>
+                <p class="text-sm text-gray-400">Like new no printilan ...</p>
+              </div>
             </div>
+            <div class="text-right">
+              <span class="text-sm text-gray-400">20.01</span>
+            </div>
+          </div>
+          <div class="w-89 ml-2 border-t border-white opacity-25"></div>
+
+          <!-- Kontak Cah ke-1 -->
+          <div class="flex justify-between items-center rounded-lg">
+            <div class="flex items-center space-x-4">
+              <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full" />
+              <div>
+                <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
+                <p class="text-sm text-gray-400">Like new no printilan ...</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm text-gray-400">Kemarin 00.00</span>
+            </div>
+          </div>
+          <div class="w-89 ml-2 border-t border-white opacity-25"></div>
+
+          <!-- Kontak Cah ke-2 -->
+          <div class="flex justify-between items-center rounded-lg">
+            <div class="flex items-center space-x-4">
+              <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full" />
+              <div>
+                <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
+                <p class="text-sm text-gray-400">Like new no printilan ...</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm text-gray-400">Kemarin 00.00</span>
+            </div>
+          </div>
+          <div class="w-89 ml-2 border-t border-white opacity-25"></div>
+
+          <!-- Kontak Cah ke-3 -->
+          <div class="flex justify-between items-center rounded-lg">
+            <div class="flex items-center space-x-4">
+              <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full" />
+              <div>
+                <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
+                <p class="text-sm text-gray-400">Like new no printilan ...</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm text-gray-400">Kemarin 00.00</span>
+            </div>
+          </div>
+          <div class="w-89 ml-2 border-t border-white opacity-25"></div>
+
+          <!-- Kontak Cah ke-4 -->
+          <div class="flex justify-between items-center rounded-lg">
+            <div class="flex items-center space-x-4">
+              <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full" />
+              <div>
+                <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
+                <p class="text-sm text-gray-400">Like new no printilan ...</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm text-gray-400">Kemarin 00.00</span>
+            </div>
+          </div>
+          <div class="w-89 ml-2 border-t border-white opacity-25"></div>
+
+          <!-- Kontak Cah ke-5 -->
+          <div class="flex justify-between items-center rounded-lg">
+            <div class="flex items-center space-x-4">
+              <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full" />
+              <div>
+                <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
+                <p class="text-sm text-gray-400">Like new no printilan ...</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm text-gray-400">Kemarin 00.00</span>
+            </div>
+          </div>
+          <div class="w-89 ml-2 border-t border-white opacity-25"></div>
+
+          <!-- Kontak Cah ke-6 -->
+          <div class="flex justify-between items-center rounded-lg">
+            <div class="flex items-center space-x-4">
+              <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full" />
+              <div>
+                <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
+                <p class="text-sm text-gray-400">Like new no printilan ...</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm text-gray-400">Kemarin 00.00</span>
+            </div>
+          </div>
+          <div class="w-89 ml-2 border-t border-white opacity-25"></div>
+
+          <!-- Kontak Cah ke-7 -->
+          <div class="flex justify-between items-center rounded-lg">
+            <div class="flex items-center space-x-4">
+              <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full" />
+              <div>
+                <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
+                <p class="text-sm text-gray-400">Like new no printilan ...</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm text-gray-400">Kemarin 00.00</span>
+            </div>
+          </div>
+          <div class="w-89 ml-2 border-t border-white opacity-25"></div>
+
+          <!-- Kontak Cah ke-8-->
+          <div class="flex justify-between items-center rounded-lg">
+            <div class="flex items-center space-x-4">
+              <img src="../assets/profile-kontak-2.png" alt="User" class="w-16 h-16 rounded-full" />
+              <div>
+                <h3 class="text-lg font-semibold text-white">Shoes Shop</h3>
+                <p class="text-sm text-gray-400">Like new no printilan ...</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm text-gray-400">Kemarin 00.00</span>
+            </div>
+          </div>
+          <div class="w-89 ml-2 border-t border-white opacity-25"></div>
+        </div>
+      </div>
+
+      <!-- Bagian Dua: Halaman Chat Private -->
+      <div class="basis-7/12 bg-bgCard font-poppins shadow-md rounded-2xl p-5 w-620 gap-10 ml-8">
+        <!-- Profil User -->
+        <div class="flex justify-between items-center mb-4">
+          <div class="flex items-center">
+            <img src="../assets/profile_image_chat.png" alt="Profile" class="w-set h-set rounded-full" />
+            <div class="ml-8">
+              <div class="text-white font-semibold text-xl">Kita Shoes & Care</div>
+              <div class="text-white text-xs">Online</div>
+            </div>
+          </div>
+          <div class="text-white cursor-pointer mr-6">
+            <img src="../assets/icon_menu_chat.png" alt="Menu" class="w-1 h-5" />
+          </div>
         </div>
 
-        <!-- Bagian Dua: Halaman Chat Private -->
-        <div class="basis-7/12 bg-bgCard font-poppins shadow-md rounded-2xl p-5 w-620 gap-10 ml-8">
-            
-            <!-- Profil User -->
-            <div class="flex justify-between items-center mb-4">
-                <div class="flex items-center">
-                <img src="../assets/profile_image_chat.png" alt="Profile" class="w-set h-set rounded-full">
-                <div class="ml-8">
-                    <div class="text-white font-semibold text-xl">Kita Shoes & Care</div>
-                    <div class="text-white text-xs">Online</div>
-                </div>
-                </div>
-                <div class="text-white cursor-pointer mr-6">
-                <img src="../assets/icon_menu_chat.png" alt="Menu" class=" w-1 h-5">
-                </div>
+        <!-- Chat Area -->
+        <div class="flex flex-col space-y-4 overflow-auto h-112 mb-4">
+          <!-- User Message 1 -->
+          <div class="flex justify-end mr-6 relative">
+            <div class="relative bg-bgchat border border-gray-500 p-2 rounded-lg max-w-max z-10">
+              <span class="text-white text-xs">Sol sepatu lepas</span>
+              <!-- Tambahkan icon di luar border -->
+              <img src="../assets/cagak-2.png" alt="Icon" class="absolute w-3 h-3 top-set-cagak-1-T left-set-cagak-1-L z-0" />
             </div>
+          </div>
 
-           <!-- Chat Area -->
-            <div class="flex flex-col space-y-4 overflow-auto h-112 mb-4">
-                
-                <!-- User Message 1 -->
-                <div class="flex justify-end mr-6 relative">
-                    <div class="relative bg-bgchat border border-gray-500 p-2 rounded-lg max-w-max z-10">
-                        <span class="text-white text-xs">Sol sepatu lepas</span>
-                        <!-- Tambahkan icon di luar border -->
-                        <img src="../assets/cagak-2.png" alt="Icon" class="absolute w-3 h-3 top-set-cagak-1-T left-set-cagak-1-L z-0">
-                    </div>
-                </div>
-                
-                <!-- User Message 2 -->
-                <div class="flex justify-end mr-6 relative">
-                    <div class="relative bg-bgchat border border-gray-500 p-3 rounded-lg max-w-max z-10">
-                        <img src="../assets/sepatu-chat.png" alt="Shoe Image" class="w-44 h-40 object-cover rounded-lg">
-                        <!-- Waktu di luar border -->
-                        <div class="text-xs text-white mt-1 absolute right-0 bottom-[-20px] z-20 opacity-25">12.00</div>
-                        <!-- Tambahkan icon di luar border -->
-                        <img src="../assets/cagak-2.png" alt="Icon" class="absolute w-6 h-4 top-set-cagak-2-T left-set-cagak-2-L z-0">
-                    </div>
-                </div>
-                
-                <!-- Admin Message -->
-                <div class="flex justify-start ml-6 mr-48 relative">
-                    <div class="relative bg-bgchat2 p-3 rounded-lg max-w-max z-10">
-                        <span class="text-white text-xs">Pengajuan pengembalian diterima, silahkan kirim barang ke alamat berikut untuk mendapatkan pengembalian</span>
-                        <!-- Waktu di luar border -->
-                        <div class="text-xs text-white mt-1 absolute left-0 bottom-[-20px] z-20 opacity-25">12.01</div>
-                        <!-- Tambahkan icon di luar border -->
-                        <img src="../assets/cagak-3.png" alt="Icon" class="absolute w-10 h-5 right-set-cagak-3-R bottom-0 z-0">
-                    </div>
-                </div>
-
+          <!-- User Message 2 -->
+          <div class="flex justify-end mr-6 relative">
+            <div class="relative bg-bgchat border border-gray-500 p-3 rounded-lg max-w-max z-10">
+              <img src="../assets/sepatu-chat.png" alt="Shoe Image" class="w-44 h-40 object-cover rounded-lg" />
+              <!-- Waktu di luar border -->
+              <div class="text-xs text-white mt-1 absolute right-0 bottom-[-20px] z-20 opacity-25">12.00</div>
+              <!-- Tambahkan icon di luar border -->
+              <img src="../assets/cagak-2.png" alt="Icon" class="absolute w-6 h-4 top-set-cagak-2-T left-set-cagak-2-L z-0" />
             </div>
+          </div>
 
-            <!-- Input Area -->
-            <div class="relative mt-80">
-                <input type="text" placeholder="Ketik Disini" class="flex-grow w-full p-2 pr-10 rounded-lg bg-bgInputchat text-white placeholder-right opacity-15">
-                <div class="absolute inset-y-0 right-0 flex items-center pr-3 space-x-3">
-                    <img src="../assets/icon-smile.png" alt="Emote" class="w-3 h-3 cursor-pointer">
-                    <img src="../assets/icon-camera.png" alt="Camera" class="w-4 h-3 cursor-pointer">
-                </div>
+          <!-- Admin Message -->
+          <div class="flex justify-start ml-6 mr-48 relative">
+            <div class="relative bg-bgchat2 p-3 rounded-lg max-w-max z-10">
+              <span class="text-white text-xs">Pengajuan pengembalian diterima, silahkan kirim barang ke alamat berikut untuk mendapatkan pengembalian</span>
+              <!-- Waktu di luar border -->
+              <div class="text-xs text-white mt-1 absolute left-0 bottom-[-20px] z-20 opacity-25">12.01</div>
+              <!-- Tambahkan icon di luar border -->
+              <img src="../assets/cagak-3.png" alt="Icon" class="absolute w-10 h-5 right-set-cagak-3-R bottom-0 z-0" />
             </div>
-
+          </div>
         </div>
+
+        <!-- Input Area -->
+        <div class="relative mt-80">
+          <input type="text" placeholder="Ketik Disini" class="flex-grow w-full p-2 pr-10 rounded-lg bg-bgInputchat text-white placeholder-right opacity-15" />
+          <div class="absolute inset-y-0 right-0 flex items-center pr-3 space-x-3">
+            <img src="../assets/icon-smile.png" alt="Emote" class="w-3 h-3 cursor-pointer" />
+            <img src="../assets/icon-camera.png" alt="Camera" class="w-4 h-3 cursor-pointer" />
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
-
     <footer class="">
-        <div class="text-center font-extrabold whitespace-nowrap mb-20">
-        <p class="text-7xl text-white mb-4">
-            SOES<span class="text-secondary">ZY</span>
-        </p>
-        <p class="text-xl uppercase text-white">
-            cool doesn't have to be expensive
-        </p>
-        </div>
-        <div class="flex justify-evenly">
+      <div class="text-center font-extrabold whitespace-nowrap mb-20">
+        <p class="text-7xl text-white mb-4">SOES<span class="text-secondary">ZY</span></p>
+        <p class="text-xl uppercase text-white">cool doesn't have to be expensive</p>
+      </div>
+      <div class="flex justify-evenly">
         <div class="w-72">
-            <h4 class="text-yellow font-bold text-xl mb-3">About Us</h4>
-            <p class="text-white text-sm">
-            We are a provider of quality used shoes that makes customer
-            satisfaction and comfort a top priority.
-            </p>
+          <h4 class="text-yellow font-bold text-xl mb-3">About Us</h4>
+          <p class="text-white text-sm">We are a provider of quality used shoes that makes customer satisfaction and comfort a top priority.</p>
         </div>
         <div class="">
-            <h4 class="text-yellow font-bold text-xl mb-3">Categories</h4>
-            <ul class="text-white">
+          <h4 class="text-yellow font-bold text-xl mb-3">Categories</h4>
+          <ul class="text-white">
             <li><a href="#">Runners</a></li>
             <li><a href="#">Sneakers</a></li>
             <li><a href="#">Outdoors</a></li>
             <li><a href="#">School</a></li>
-            </ul>
+          </ul>
         </div>
         <div class="">
-            <h4 class="text-yellow font-bold text-xl mb-3">Company</h4>
-            <ul class="text-white">
+          <h4 class="text-yellow font-bold text-xl mb-3">Company</h4>
+          <ul class="text-white">
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
-            </ul>
+          </ul>
         </div>
         <div class="">
-            <h4 class="text-yellow font-bold text-xl mb-3">Follow us</h4>
-            <div class="flex justify-around gap-1">
+          <h4 class="text-yellow font-bold text-xl mb-3">Follow us</h4>
+          <div class="flex justify-around gap-1">
             <a href="#"><img class="w-5" src="../assets/fb.png" alt="fb" /></a>
             <a href="#"><img class="w-5" src="../assets/ig.png" alt="ig" /></a>
             <a href="#"><img class="w-5" src="../assets/tt.png" alt="tt" /></a>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

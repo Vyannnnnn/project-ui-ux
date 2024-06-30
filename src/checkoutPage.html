@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body class="bg-primary bg-no-repeat bg-center bg-cover relative">
-    <!-- start nav -->
-    <nav class="bg-white fixed rounded-2xl w-[90%] mx-[58.3px] z-20 top-0 start-0 border-gray-200 mt-6">
+   <!-- start nav -->
+   <div class="flex justify-center my-8 font-rubik">
+    <nav class="bg-white rounded-2xl w-[90%]">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <div class="flex space-x-3 md:space-x-0 rtl:space-x-revers">
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
@@ -20,19 +21,19 @@
             </li>
           </ul>
         </div>
-        <a href="landingPage.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <span class="self-center text-4xl font-extrabold whitespace-nowrap text-black">SOES<span class="text-secondary">ZY</span></span>
         </a>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto" id="navbar-sticky">
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
-              <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page"><img class="w-5" src="../assets/cart.png" alt="" /></a>
+              <a href="cartProduk.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page"><img class="w-5" src="../assets/cart.png" alt="" /></a>
             </li>
             <li>
               <a
                 href="customer_chat_page.html"
                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                ><img class="w-5" src="../assets/chat.png" alt=""
+                ><img class="w-5" src="../assets/icon-chat-sm.png" alt=""
               /></a>
             </li>
             <li>
@@ -53,21 +54,22 @@
         </div>
       </div>
     </nav>
-    <!-- end nav -->
+  </div>
+  <!-- end nav -->
 
     <!-- start main -->
-    <div class="flex justify-center gap-5 mt-36 mb-24">
+    <div class="flex justify-center gap-5 mt-14 mb-24 font-rubik">
       <div class="flex-col">
         <!-- contact details -->
         <div class="w-[600px] mb-5 bg-[#FAFAFA] rounded-xl px-5 py-7">
-          <h1 class="font-bold text-2xl">Contact Details</h1>
-          <p class="mb-3">We will use these details to keep you inform about your delivery.</p>
-          <form class="w-1/2 mb-5">
+          <h1 class="font-semibold text-3xl mb-2">Contact Details</h1>
+          <p class="mb-5 font-medium text-sm">We will use these details to keep you inform about your delivery.</p>
+          <form class="w-1/2 mb-7">
             <div class="mb-5">
               <input type="email" id="email" class="bg-[#FAFAFA] border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Email" required />
             </div>
           </form>
-          <h1 class="font-bold text-2xl mb-3">Shipping Address</h1>
+          <h1 class="font-semibold text-3xl mb-4">Shipping Address</h1>
           <form class="w-full mb-4">
             <div class="mb-4 flex gap-2">
               <input type="text" id="Fname" class="bg-[#FAFAFA] border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="First Name*" required />
@@ -75,7 +77,7 @@
             </div>
             <div class="w-full mb-4">
               <input type="text" id="address" class="bg-[#FAFAFA] w-full border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="Find Delivery Address*" required />
-              <p class="mt-1 text-sm text-gray-500">Start typing your street address or zip code for suggestion</p>
+              <p class="mt-1 font-medium text-sm text-gray-500">Start typing your street address or zip code for suggestion</p>
             </div>
             <div class="w-full mb-4">
               <input type="number" id="phone" class="bg-[#FAFAFA] w-full border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="Phone Number*" required />
@@ -88,7 +90,7 @@
         <!-- payment -->
         <div class="w-[600px]  bg-[#FAFAFA] rounded-xl py-8 px-5">
           <div class="border-b-[1px] mb-7">
-            <h1 class="font-bold text-2xl mb-3">Payment</h1>
+            <h1 class="font-semibold text-3xl mb-3">Payment</h1>
           </div>
           <div class="mb-7">
             <h4 class="font-semibold text-lg mb-2">Pay With:</h4>
@@ -123,8 +125,8 @@
             </div>
             
           </form>
-          <button class="bg-yellow mb-6 w-full rounded-md py-3 font-bold"><a href="">Payment Now!</a></button>
-          <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
+          <button class="bg-yellow mb-6 w-full rounded-md py-3 font-bold"><a href="loading.html">Pay Now</a></button>
+          <p class="text-sm font-normal">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
         </div>
         <!-- end payment -->
       </div>
@@ -132,19 +134,19 @@
       <div class="flex-col items-center">
         <!-- order summary -->
         <div class="bg-[#FAFAFA] mb-5 w-[400px] px-4 py-4 rounded-xl">
-          <h1 class="font-bold text-2xl mb-4">Order Summary</h1>
+          <h1 class="font-semibold text-3xl mb-4">Order Summary</h1>
           <div class="flex justify-between font-semibold">
-            <div class="flex-col flex gap-y-1">
+            <div class="flex-col flex gap-y-1 font-semibold text-lg">
               <p>1 Item</p>
               <p>Delivery</p>
               <p>Sales Tax</p>
-              <p class="font-bold text-lg">Total</p>
+              <p class="font-semibold text-lg">Total</p>
             </div>
             <div class="flex-col flex gap-1">
               <p>IDR1.999.980</p>
               <p>IDR9.000</p>
               <p>-</p>
-              <p class="font-bold text-lg">IDR1.999.980</p>
+              <p class="mt-2 font-semibold text-lg">IDR1.999.980</p>
             </div>
           </div>
         </div>
@@ -152,19 +154,19 @@
 
         <!-- order details -->
         <div class="bg-[#FAFAFA] w-[400px] px-4 py-4 rounded-xl">
-          <h1 class="font-bold text-2xl mb-5">Order Details</h1>
+          <h1 class="font-semibold text-3xl mb-5">Order Details</h1>
           <div class="flex gap-x-5 items-start">
             <div class="bg-[#ECEDEF] rounded-xl px-2">
               <img src="../assets/shoes.png" alt="shoes" class="w-44 h-36" />
             </div>
             <div class="">
               <h5 class="font-semibold text-lg">DROPSET TRAINER SHOES</h5>
-              <p class="mb-3">Men’s Road Running Shoes Enamel Blue/ University White</p>
-              <div class="flex gap-10 mb-3">
+              <p class="mb-3 font-medium text-sm">Men’s Road Running Shoes Enamel Blue/ University White</p>
+              <div class="flex gap-10 mb-3 text-sm font-medium">
                 <p>Size 10</p>
                 <p>Quantity 1</p>
               </div>
-              <p class="font-bold text-lg">IDR1.999.980</p>
+              <p class="font-semibold text-lg">IDR1.999.980</p>
             </div>
           </div>
         </div>
@@ -177,17 +179,17 @@
     <!-- footer -->
     <footer class="mb-10">
       <div class="text-center font-extrabold whitespace-nowrap mb-20">
-        <p class="text-7xl text-white mb-4">SOES<span class="text-secondary">ZY</span></p>
-        <p class="text-xl uppercase text-white">cool doesn't have to be expensive</p>
+        <p class="text-8xl text-white mb-4 font-black">SOES<span class="text-secondary">ZY</span></p>
+        <p class="text-xl uppercase text-white font-black">cool doesn't have to be expensive</p>
       </div>
       <div class="flex justify-evenly">
         <div class="w-72">
-          <h4 class="text-yellow font-bold text-xl mb-3">About Us</h4>
-          <p class="text-white text-sm">We are a provider of quality used shoes that makes customer satisfaction and comfort a top priority.</p>
+          <h4 class="text-yellow font-bold text-lg mb-3">About Us</h4>
+          <p class="text-white text-sm font-openSans">We are a provider of quality used shoes that makes customer satisfaction and comfort a top priority.</p>
         </div>
         <div class="">
-          <h4 class="text-yellow font-bold text-xl mb-3">Categories</h4>
-          <ul class="text-white">
+          <h4 class="text-yellow font-bold text-lg mb-3">Categories</h4>
+          <ul class="text-white font-openSans">
             <li><a href="#">Runners</a></li>
             <li><a href="#">Sneakers</a></li>
             <li><a href="#">Outdoors</a></li>
@@ -195,14 +197,14 @@
           </ul>
         </div>
         <div class="">
-          <h4 class="text-yellow font-bold text-xl mb-3">Company</h4>
-          <ul class="text-white">
+          <h4 class="text-yellow font-bold text-lg mb-3">Company</h4>
+          <ul class="text-white font-openSans">
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <div class="">
-          <h4 class="text-yellow font-bold text-xl mb-3">Follow us</h4>
+          <h4 class="text-yellow font-bold text-lg mb-3">Follow us</h4>
           <div class="flex justify-around gap-1">
             <a href="#"><img class="w-5" src="../assets/fb.png" alt="fb" /></a>
             <a href="#"><img class="w-5" src="../assets/ig.png" alt="ig" /></a>

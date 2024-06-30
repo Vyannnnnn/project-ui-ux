@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Soeszy - Filter</title>
-        <link rel="stylesheet" href="../dist/output.css" />
-        <style>
-        /* Customize the label (the container) */
-        .container {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soeszy - Filter</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <style>
+      /* Customize the label (the container) */
+      .container {
         display: block;
         position: relative;
         padding-left: 35px;
@@ -17,366 +17,332 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        }
+      }
 
-        /* Hide the browser's default checkbox */
-        .container input {
+      /* Hide the browser's default checkbox */
+      .container input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
         height: 0;
         width: 0;
-        }
+      }
 
-        /* Create a custom checkbox */
-        .checkmark {
+      /* Create a custom checkbox */
+      .checkmark {
         position: absolute;
         top: 0;
         left: 0;
         height: 16px;
         width: 16px;
         background-color: white;
-        }
+      }
 
-        /* When the checkbox is checked, add a blue background */
-        .container input:checked ~ .checkmark {
-        border: solid #1F1A24 2.1px;
-        }
+      /* When the checkbox is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+        border: solid #1f1a24 2.1px;
+      }
 
-        /* Create the checkmark/indicator (hidden when not checked) */
-        .checkmark:after {
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
         content: "";
         position: absolute;
         display: none;
-        }
+      }
 
-        .slider {
+      .slider {
         -webkit-appearance: none;
         width: 100%;
         height: 4px;
-        border-radius: 5px;  
+        border-radius: 5px;
         background: black;
         outline: none;
         opacity: 0.7;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
-        }
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
 
-        .slider::-webkit-slider-thumb {
+      .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
         width: 14px;
         height: 14px;
-        border-radius: 50%; 
+        border-radius: 50%;
         background: black;
         cursor: pointer;
-        }
+      }
 
-        .slider::-moz-range-thumb {
+      .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
         border-radius: 50%;
         background: black;
         cursor: pointer;
-        }
-        </style>
-    </head>
-    <body class="bg-[url('../assets/bg-repeat.png')]">
-        
-        <!-- start nav -->
-         <div class="flex justify-center my-8">
-            <nav
-             class="lg:bg-white rounded-2xl w-[90%]"
-             >
-             <div
-             class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2"
-             >
-             <div class="flex space-x-3 md:space-x-0 rtl:space-x-revers">
-                 <ul
-                 class="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-                 >
-                 <li>
-                     <a
-                     href="#"
-                     class="block py-2 px-3 text-black rounded md:bg-transparent md:text-black md:p-0"
-                     aria-current="page"
-                     >Men's</a
-                     >
-                 </li>
-                 <li>
-                     <a
-                     href="#"
-                     class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 border-gray-700"
-                     >Women's</a
-                     >
-                 </li>
-                 </ul>
-             </div>
-             <a href="landingPage.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                 <span
-                 class="self-center my-2 text-5xl font-extrabold whitespace-nowrap text-black"
-                 >SOES<span class="text-secondary">ZY</span></span
-                 >
-             </a>
-             <div
-                 class="items-center justify-between hidden w-full md:flex md:w-auto"
-                 id="navbar-sticky"
-             >
-                 <ul
-                 class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-                 >
-                 <li>
-                     <div class="py-1 rounded-2xl flex bg-[#D9D9D9] pl-2 pr-28"><img class="w-5 mr-2" src="../assets/search.png" alt=""/>Search...</div>
-                 </li>
-                 <li>
-                     <a
-                     href="#"
-                     class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                     ><img class="w-7" src="../assets/profile.png" alt=""
-                     /></a>
-                 </li>
-                 </ul>
-             </div>
-             </div>
-            </nav>
-         </div>
-        <!-- end nav -->
-
-         <!-- hero section start -->
-          <div class="w-4/5 mx-auto mb-60 relative">
-                <img class="max-h-[28.5rem] mx-auto" src="../assets/hero-filter.png" alt="hero">
-                <div class="absolute top-[22rem] right-[3rem]">
-                    <P class="text-white text-3xl mb-3">Limited time only</P>
-                    <h1 class="text-white text-7xl mb-4">Get 30% Off</h1>
-                    <P class="text-white text-3xl mb-3">Sneakers made with your comfort in<br>mind so you can put all of your focus<br>into your next session.</P>
-                </div>
+      }
+    </style>
+  </head>
+  <body class="bg-[url('../assets/bg-repeat.png')] font-rubik">
+    <!-- start nav -->
+    <div class="flex justify-center my-8 font-rubik">
+      <nav class="bg-white rounded-2xl w-[90%]">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+          <div class="flex space-x-3 md:space-x-0 rtl:space-x-revers">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <li>
+                <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent md:text-black md:p-0" aria-current="page">Men's</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 border-gray-700">Women's</a>
+              </li>
+            </ul>
           </div>
-         <!-- hero section end -->
+          <a href="landingPage.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center text-4xl font-extrabold whitespace-nowrap text-black">SOES<span class="text-secondary">ZY</span></span>
+          </a>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <li>
+                <div class="py-1 rounded-2xl flex bg-[#D9D9D9] pl-2 pr-28"><img class="w-5 mr-2" src="../assets/search.png" alt="" />Search...</div>
+              </li>
+              <li>
+                <a
+                  href="pelanggan_login.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  ><img class="w-5" src="../assets/profile.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- end nav -->
+    <!-- hero section start -->
+    <div class="w-[90%] mx-auto mb-60 relative font-rubik mt-12">
+      <img class="max-h-[27.5rem] mx-auto" src="../assets/hero-filter.png" alt="hero" />
+      <div class="absolute top-[21rem] right-40">
+        <p class="text-white text-3xl mb-3">Limited time only</p>
+        <h1 class="text-white text-7xl mb-4 font-semibold">Get 30% Off</h1>
+        <p class="text-white text-3xl mb-3 ">Sneakers made with your comfort in<br />mind so you can put all of your focus<br />into your next session.</p>
+      </div>
+    </div>
+    <!-- hero section end -->
 
-         <!-- Filter start-->
-          <div class="w-4/5 mx-auto">
-            <div class="flex flex-row gap-12">
-                <div class="basis-4/12">
-                    <div class="rounded-3xl bg-[#E7E7E7] mb-3 px-6 py-3">
-                        <h3 class="text-2xl font-bold mb-5">Filters</h3>
-                        <div class="flex justify-between mb-4">
-                            <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1"></button>
-                            <p class="text-lg font-bold">REVINE BY</p>
-                        </div>
-                        <div class="grid grid-cols-4 gap-3 mb-5">
-                            <button class="py-3 rounded-[0.90rem] bg-black text-white text-sm w-full">Mens</button>
-                            <button class="py-3 rounded-[0.90rem] bg-black text-white text-sm w-full">Casual</button>
-                        </div>
-                        <div class="flex justify-between mb-4">
-                            <button  class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1"></button>
-                            <p class="text-lg font-bold">SIZE</p>
-                        </div>
-                        <div class="grid grid-cols-5 gap-5 mb-5">
-                            <button class="min-h-14 rounded-lg bg-black text-white text-lg text-center">38</button>
-                            <button class="min-h-14 rounded-lg bg-[#D2D1D3] text-[#8F8C91] text-lg text-center" disabled>39</button>
-                            <button class="min-h-14 rounded-lg bg-[#D2D1D3] text-[#8F8C91] text-lg text-center" disabled>40</button>
-                            <button class="min-h-14 rounded-lg bg-white text-black text-lg text-center">41</button>
-                            <button class="min-h-14 rounded-lg bg-white text-black text-lg text-center">42</button>
-                            <button class="min-h-14 rounded-lg bg-white text-black text-lg text-center">43</button>
-                            <button class="min-h-14 rounded-lg bg-white text-black text-lg text-center">44</button>
-                            <button class="min-h-14 rounded-lg bg-white text-black text-lg text-center">45</button>
-                            <button class="min-h-14 rounded-lg bg-white text-black text-lg text-center">46</button>
-                            <button class="min-h-14 rounded-lg bg-white text-black text-lg text-center">47</button>
-                        </div>
-                        <div class="flex justify-between mb-4">
-                            <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1"></button>
-                            <p class="text-lg font-bold">COLOR</p>
-                        </div>
-                        <div class="grid grid-cols-5 gap-5 mb-5">
-                            <button class="min-h-14 rounded-lg bg-[#4A69E2]"></button>
-                            <button class="min-h-14 rounded-lg bg-[#FFA52F]"></button>
-                            <button class="min-h-14 rounded-lg bg-[#232321]"></button>
-                            <button class="min-h-14 rounded-lg bg-[#234D41]"></button>
-                            <button class="min-h-14 rounded-lg bg-[#353336]"></button>
-                            <button class="min-h-14 rounded-lg bg-[#F08155]"></button>
-                            <button class="min-h-14 rounded-lg bg-[#C9CCC6]"></button>
-                            <button class="min-h-14 rounded-lg bg-[#677282]"></button>
-                            <button class="min-h-14 rounded-lg bg-[#925513]"></button>
-                            <button class="min-h-14 rounded-lg bg-[#BB8056]"></button>
-                        </div>
-                        <div class="flex justify-between mb-4">
-                            <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1"></button>
-                            <p class="text-lg font-bold">SIZE</p>
-                        </div>
-                        <div class="mb-5 ml-2">
-                            <label class="container mb-1">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark mt-[0.5rem]"></span>
-                                <p class="text-lg">Casual Shoes</p>
-                            </label>
-                            <label class="container mb-1">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark mt-[0.5rem]"></span>
-                                <p class="text-lg">Runners</p>
-                            </label>
-                            <label class="container mb-1">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark mt-[0.5rem]"></span>
-                                <p class="text-lg">Hiking</p>
-                            </label>
-                            <label class="container mb-1">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark mt-[0.5rem]"></span>
-                                <p class="text-lg">Sneaker</p>
-                            </label>
-                            <label class="container mb-1">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark mt-[0.5rem]"></span>
-                                <p class="text-lg">Baseball</p>
-                            </label>
-                            <label class="container mb-1">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark mt-[0.5rem]"></span>
-                                <p class="text-lg">Golf</p>
-                            </label>
-                            <label class="container mb-1">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark mt-[0.5rem]"></span>
-                                <p class="text-lg">Outdoor</p>
-                            </label>
-                        </div>
-                        <div class="flex justify-between mb-4">
-                            <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1"></button>
-                            <p class="text-lg font-bold">GENDER</p>
-                        </div>
-                        <div class="mb-5 ml-2">
-                            <label class="container mb-1">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark mt-[0.5rem]"></span>
-                                <p class="text-lg">Man</p>
-                            </label>
-                            <label class="container mb-1">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark mt-[0.5rem]"></span>
-                                <p class="text-lg">Woman</p>
-                            </label>
-                        </div>
-                        <div class="flex justify-between mb-7">
-                            <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1"></button>
-                            <p class="text-lg font-bold">PRICE</p>
-                        </div>
-                        <div class="mb-16 mx-1">
-                            <div class="slidecontainer">
-                                <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
-                            </div>
-                            <div class="flex justify-between">
-                                <p class="text-sm order-last font-bold">$0</p>
-                                <p class="text-sm order-last font-bold">$1000</p>
-                            </div>
-                        </div>
-                        <div class="flex justify-between mb-4 px-2">
-                            <button class="py-1 px-5 rounded-[2rem] bg-black text-white text-base">Clear all</button>
-                            <button class="py-1 px-5 rounded-[2rem] bg-black text-white text-base">Show result</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid grid-row">
-                    <div class="basis-8/12 grid grid-cols-2 gap-10">
-                        <div class="">
-                            <div class="rounded-[2rem] border-[9px] relative mb-3 bg-[#ECEDEF]">
-                                <div class="bg-black rounded-br-[1.25rem] rounded-tl-[1.25rem] absolute"><p class="text-white py-2 text-sm px-3">New</p></div>
-                                <img class="w-full" src="../assets/ADIDAS-4DFWD-X-PARLEY-2.png" alt="">
-                            </div>
-                            <h2 class="text-white text-2xl font-bold mb-3">ULTRABOOST 1.0 MIAMI<br>Green</h2>
-                            <a href="detailProduk.html"><button class="py-3 px-4 rounded-lg bg-yellow text-sm font-bold w-full mb-1">View Product - $125</button></a>
-                        </div>
-                        <div class="">
-                            <div class="rounded-3xl border-[9px] relative mb-3 bg-[#ECEDEF]">
-                                <div class="bg-black rounded-br-[1.25rem] rounded-tl-[1.25rem] absolute"><p class="text-white py-2 text-sm px-3">New</p></div>
-                                <img class="w-full" src="../assets/ADIDAS-4DFWD-X-PARLEY-3.png" alt="">
-                            </div>
-                            <h2 class="text-white text-2xl font-bold mb-3">ADIDAS OZELIA SHOES<br>Green</h2>
-                            <a href="detailProduk.html"><button class="py-3 px-4 rounded-lg bg-yellow text-sm font-bold w-full mb-1">VIEW PRODUCT - $125</button></a>
-                        </div>
-                        <div class="mb-12">
-                            <div class="rounded-3xl border-[9px] relative mb-3 bg-[#ECEDEF]">
-                                <div class="bg-black rounded-br-[1.25rem] rounded-tl-[1.25rem] absolute"><p class="text-white py-2 text-sm px-3">New</p></div>
-                                <img class="w-full" src="../assets/ULTRABOOST-1.0-MIAMI.png" alt="">
-                            </div>
-                            <h2 class="text-white text-2xl font-bold mb-3">ULTRABOOST 1.0 MIAMI<br>Green</h2>
-                            <a href="detailProduk.html"><button class="py-3 px-4 rounded-lg bg-yellow text-sm font-bold w-full mb-5">VIEW PRODUCT - $125</button></a>
-                        </div>
-                        <div class="">
-                            <div class="rounded-3xl border-[9px] relative mb-3 bg-[#ECEDEF]">
-                                <div class="bg-black rounded-br-[1.25rem] rounded-tl-[1.25rem] absolute"><p class="text-white py-2 text-sm px-3">New</p></div>
-                                <img class="w-full" src="../assets/ADIDAS-OZELIA-SHOES.png" alt="">
-                            </div>
-                            <h2 class="text-white text-2xl font-bold mb-3">ADIDAS OZELIA SHOES<br>Green</h2>
-                            <a href="detailProduk.html"><button class="py-3 px-4 rounded-lg bg-yellow text-sm font-bold w-full mb-5">VIEW PRODUCT - $125</button></a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Filter start-->
+    <div class="w-4/5 mx-auto font-rubik">
+      <div class="flex flex-row gap-12">
+        <div class="basis-4/12">
+          <div class="rounded-3xl bg-[#E7E7E7] mb-3 px-6 py-3">
+            <h3 class="text-2xl font-bold mb-5">Filters</h3>
+            <div class="flex justify-between mb-4">
+              <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1" /></button>
+              <p class="text-lg font-bold">REFINE BY</p>
+            </div>
+            <div class="flex gap-3 mb-5">
+              <button class="py-2 px-3 rounded-xl bg-black text-white text-center text-xs">Mens</button>
+              <button class="py-2 px-3 rounded-xl bg-black text-white text-center text-xs">Casual</button>
+            </div>
+            <div class="flex justify-between mb-4">
+              <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1" /></button>
+              <p class="text-lg font-bold">SIZE</p>
+            </div>
+            <div class="grid grid-cols-5 gap-5 mb-5">
+              <button class="w-10 h-10 rounded-lg bg-black text-white text-sm text-center font-semibold">38</button>
+              <button class="w-10 h-10 rounded-lg bg-[#D2D1D3] text-[#8F8C91] text-sm text-center font-semibold" disabled>39</button>
+              <button class="w-10 h-10 rounded-lg bg-[#D2D1D3] text-[#8F8C91] text-sm text-center font-semibold" disabled>40</button>
+              <button class="w-10 h-10 rounded-lg bg-white text-black text-sm text-center font-semibold">41</button>
+              <button class="w-10 h-10 rounded-lg bg-white text-black text-sm text-center font-semibold">42</button>
+              <button class="w-10 h-10 rounded-lg bg-white text-black text-sm text-center font-semibold">43</button>
+              <button class="w-10 h-10 rounded-lg bg-white text-black text-sm text-center font-semibold">44</button>
+              <button class="w-10 h-10 rounded-lg bg-white text-black text-sm text-center font-semibold">45</button>
+              <button class="w-10 h-10 rounded-lg bg-white text-black text-sm text-center font-semibold">46</button>
+              <button class="w-10 h-10 rounded-lg bg-white text-black text-sm text-center font-semibold">47</button>
+              </div>
+            <div class="flex justify-between mb-4">
+              <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1" /></button>
+              <p class="text-lg font-bold">COLOR</p>
+            </div>
+            <div class="grid grid-cols-5 gap-5 mb-5">
+              <button class="w-10 h-10 rounded-lg bg-[#4A69E2]"></button>
+              <button class="w-10 h-10 rounded-lg bg-[#FFA52F]"></button>
+              <button class="w-10 h-10 rounded-lg bg-[#232321]"></button>
+              <button class="w-10 h-10 rounded-lg bg-[#234D41]"></button>
+              <button class="w-10 h-10 rounded-lg bg-[#353336]"></button>
+              <button class="w-10 h-10 rounded-lg bg-[#F08155]"></button>
+              <button class="w-10 h-10 rounded-lg bg-[#C9CCC6]"></button>
+              <button class="w-10 h-10 rounded-lg bg-[#677282]"></button>
+              <button class="w-10 h-10 rounded-lg bg-[#925513]"></button>
+              <button class="w-10 h-10 rounded-lg bg-[#BB8056]"></button>
+            </div>
+            <div class="flex justify-between mb-4">
+              <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1" /></button>
+              <p class="text-lg font-bold">SIZE</p>
+            </div>
+            <div class="mb-5 ml-2">
+              <label class="container mb-1">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark mt-[0.5rem]"></span>
+                <p class="text-lg">Casual Shoes</p>
+              </label>
+              <label class="container mb-1">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark mt-[0.5rem]"></span>
+                <p class="text-lg">Runners</p>
+              </label>
+              <label class="container mb-1">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark mt-[0.5rem]"></span>
+                <p class="text-lg">Hiking</p>
+              </label>
+              <label class="container mb-1">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark mt-[0.5rem]"></span>
+                <p class="text-lg">Sneaker</p>
+              </label>
+              <label class="container mb-1">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark mt-[0.5rem]"></span>
+                <p class="text-lg">Baseball</p>
+              </label>
+              <label class="container mb-1">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark mt-[0.5rem]"></span>
+                <p class="text-lg">Golf</p>
+              </label>
+              <label class="container mb-1">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark mt-[0.5rem]"></span>
+                <p class="text-lg">Outdoor</p>
+              </label>
+            </div>
+            <div class="flex justify-between mb-4">
+              <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1" /></button>
+              <p class="text-lg font-bold">GENDER</p>
+            </div>
+            <div class="mb-5 ml-2">
+              <label class="container mb-1">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark mt-[0.5rem]"></span>
+                <p class="text-lg">Man</p>
+              </label>
+              <label class="container mb-1">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark mt-[0.5rem]"></span>
+                <p class="text-lg">Woman</p>
+              </label>
+            </div>
+            <div class="flex justify-between mb-7">
+              <button class="order-last"><img src="../assets/up.png" alt="up" class="max-h-[1.4rem] mt-1" /></button>
+              <p class="text-lg font-bold">PRICE</p>
+            </div>
+            <div class="mb-16 mx-1">
+              <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="1" class="slider" id="myRange" />
+              </div>
+              <div class="flex justify-between">
+                <p class="text-sm order-last font-bold">$0</p>
+                <p class="text-sm order-last font-bold">$1000</p>
+              </div>
+            </div>
+            <div class="flex justify-between mb-4 px-2">
+              <button class="py-1 px-5 rounded-[2rem] bg-black text-white text-sm font-medium">Clear all</button>
+              <button class="py-1 px-5 rounded-[2rem] bg-black text-white text-sm font-medium">Show result</button>
             </div>
           </div>
-         <!-- Filter end-->
+        </div>
 
-         <!-- page number start -->
-         <div class="w-2/4 mx-auto mb-32">
-            <div class="grid grid-cols-10 gap-3">
-                <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base col-span-2">< PREVIOUS</button>
-                <button class="py-1 px-5 rounded-lg border-[1.5px] bg-white text-black text-base">1</button>
-                <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base">2</button>
-                <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base">3</button>
-                <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base">4</button>
-                <button class="py-1 px-5 rounded-lg  text-white text-base">...</button>
-                <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base">10</button>
-                <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base col-span-2">NEXT ></button>
+        <div class="grid grid-row font-rubik">
+          <div class="basis-8/12 grid grid-cols-2 gap-10">
+            <div class="">
+              <div class="rounded-3xl border-[9px] relative mb-3 bg-[#ECEDEF]">
+                <div class="bg-black rounded-br-[1.25rem] rounded-tl-[1.25rem] absolute"><p class="text-white py-2 text-xs px-3">New</p></div>
+                <img class="w-full" src="../assets/ADIDAS-4DFWD-X-PARLEY-2.png" alt="" />
+              </div>
+              <h2 class="text-white text-2xl font-semibold mb-3">ULTRABOOST 1.0 MIAMI<br />Green</h2>
+              <a href="detailProduk.html"><button class="py-3 px-4 rounded-lg bg-yellow text-sm font-bold w-full mb-1">View Product - $125</button></a>
             </div>
-         </div>
-         <!-- page number end -->
-         
+            <div class="">
+              <div class="rounded-3xl border-[9px] relative mb-3 bg-[#ECEDEF]">
+                <div class="bg-black rounded-br-[1.25rem] rounded-tl-[1.25rem] absolute"><p class="text-white py-2 text-xs px-3">New</p></div>
+                <img class="w-full h-[476px]" src="../assets/ADIDAS-4DFWD-X-PARLEY-3.png" alt="" />
+              </div>
+              <h2 class="text-white text-2xl font-semibold mb-3">ADIDAS OZELIA SHOES<br />Green</h2>
+              <a href="detailProduk.html"><button class="py-3 px-4 rounded-lg bg-yellow text-sm font-bold w-full mb-1">VIEW PRODUCT - $125</button></a>
+            </div>
+            <div class="mb-12">
+              <div class="rounded-3xl border-[9px] relative mb-3 bg-[#ECEDEF]">
+                <div class="bg-black rounded-br-[1.25rem] rounded-tl-[1.25rem] absolute"><p class="text-white py-2 text-xs px-3">New</p></div>
+                <img class="w-full" src="../assets/ULTRABOOST-1.0-MIAMI.png" alt="" />
+              </div>
+              <h2 class="text-white text-2xl font-semibold mb-3">ULTRABOOST 1.0 MIAMI<br />Green</h2>
+              <a href="detailProduk.html"><button class="py-3 px-4 rounded-lg bg-yellow text-sm font-bold w-full mb-5">VIEW PRODUCT - $125</button></a>
+            </div>
+            <div class="">
+              <div class="rounded-3xl border-[9px] relative mb-3 bg-[#ECEDEF]">
+                <div class="bg-black rounded-br-[1.25rem] rounded-tl-[1.25rem] absolute"><p class="text-white py-2 text-xs px-3">New</p></div>
+                <img class="w-full h-[471px]" src="../assets/ADIDAS-OZELIA-SHOES.png" alt="" />
+              </div>
+              <h2 class="text-white text-2xl font-semibold mb-3">ADIDAS OZELIA SHOES<br />Green</h2>
+              <a href="detailProduk.html"><button class="py-3 px-4 rounded-lg bg-yellow text-sm font-bold w-full mb-5">VIEW PRODUCT - $125</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Filter end-->
 
-       
-        <!-- footer -->
-        <footer class="mb-10">
-            <div class="text-center font-extrabold whitespace-nowrap mb-20">
-            <p class="text-7xl text-white mb-4">
-                SOES<span class="text-secondary">ZY</span>
-            </p>
-            <p class="text-xl uppercase text-white">
-                cool doesn't have to be expensive
-            </p>
+    <!-- page number start -->
+    <div class="w-2/4 mx-auto mb-32">
+      <div class="grid grid-cols-10 gap-3">
+        <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base col-span-2">< PREVIOUS</button>
+        <button class="py-1 px-5 rounded-lg border-[1.5px] bg-white text-black text-base">1</button>
+        <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base">2</button>
+        <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base">3</button>
+        <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base">4</button>
+        <button class="py-1 px-5 rounded-lg text-white text-base">...</button>
+        <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base">10</button>
+        <button class="py-1 px-5 rounded-lg border-[1.5px] text-white text-base col-span-2">NEXT ></button>
+      </div>
+    </div>
+    <!-- page number end -->
+
+    <!-- footer -->
+    <footer class="mb-10">
+        <div class="text-center font-extrabold whitespace-nowrap mb-20">
+          <p class="text-8xl text-white mb-4 font-black">SOES<span class="text-secondary">ZY</span></p>
+          <p class="text-xl uppercase text-white font-black">cool doesn't have to be expensive</p>
+        </div>
+        <div class="flex justify-evenly">
+          <div class="w-72">
+            <h4 class="text-yellow font-bold text-lg mb-3">About Us</h4>
+            <p class="text-white text-sm font-openSans">We are a provider of quality used shoes that makes customer satisfaction and comfort a top priority.</p>
+          </div>
+          <div class="">
+            <h4 class="text-yellow font-bold text-lg mb-3">Categories</h4>
+            <ul class="text-white font-openSans">
+              <li><a href="#">Runners</a></li>
+              <li><a href="#">Sneakers</a></li>
+              <li><a href="#">Outdoors</a></li>
+              <li><a href="#">School</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h4 class="text-yellow font-bold text-lg mb-3">Company</h4>
+            <ul class="text-white font-openSans">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h4 class="text-yellow font-bold text-lg mb-3">Follow us</h4>
+            <div class="flex justify-around gap-1">
+              <a href="#"><img class="w-5" src="../assets/fb.png" alt="fb" /></a>
+              <a href="#"><img class="w-5" src="../assets/ig.png" alt="ig" /></a>
+              <a href="#"><img class="w-5" src="../assets/tt.png" alt="tt" /></a>
             </div>
-            <div class="flex justify-evenly">
-            <div class="w-72">
-                <h4 class="text-yellow font-bold text-xl mb-3">About Us</h4>
-                <p class="text-white text-sm">
-                We are a provider of quality used shoes that makes customer
-                satisfaction and comfort a top priority.
-                </p>
-            </div>
-            <div class="">
-                <h4 class="text-yellow font-bold text-xl mb-3">Categories</h4>
-                <ul class="text-white">
-                <li><a href="#">Runners</a></li>
-                <li><a href="#">Sneakers</a></li>
-                <li><a href="#">Outdoors</a></li>
-                <li><a href="#">School</a></li>
-                </ul>
-            </div>
-            <div class="">
-                <h4 class="text-yellow font-bold text-xl mb-3">Company</h4>
-                <ul class="text-white">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="">
-                <h4 class="text-yellow font-bold text-xl mb-3">Follow us</h4>
-                <div class="flex justify-around gap-1">
-                <a href="#"><img class="w-5" src="../assets/fb.png" alt="fb" /></a>
-                <a href="#"><img class="w-5" src="../assets/ig.png" alt="ig" /></a>
-                <a href="#"><img class="w-5" src="../assets/tt.png" alt="tt" /></a>
-                </div>
-            </div>
-            </div>
-        </footer>
-        <!-- end footer -->
-    </body>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+  </body>
 </html>
